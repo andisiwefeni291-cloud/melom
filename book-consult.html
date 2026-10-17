@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a Consult — Melo M Consulting</title>
+<meta name="description" content="Book a consult with Melo M Consulting. Tell us about your business and your reason for consulting, and we'll reach out to you by email." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"><img src="MeloLogo.jpeg" alt="Melo M Consulting Logo" /></span><span class="brand-name">Melo M Consulting</span></a>
+    <nav class="nav-links" id="navLinks">
+      
+      <div class="menu-links" id="menuLinks">
+        <a href="index.html">Home</a>
+       <a href="about.html">About Us</a>
+       <a href="services.html">Services</a>
+       <a href="contact.html">Contact</a>
+
+
+      </div>
+     
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow gold">Start here</p>
+    <h1>Book a Consult</h1>
+    <p>Tell us a bit about your business and why you'd like to consult with us. We'll reach out to you through your email to arrange next steps.</p>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="contact-grid reveal">
+    <div>
+      <p class="eyebrow blue">What happens next</p>
+      <h2>Three simple steps.</h2>
+      <div class="stats" style="grid-template-columns:1fr;gap:1.5rem;margin-top:2rem;padding-top:0;border-top:none">
+        <div><div class="stat-n">01</div><div class="stat-l">Fill in the form with your details and reason for consulting.</div></div>
+        <div><div class="stat-n">02</div><div class="stat-l">We receive your request by email.</div></div>
+        <div><div class="stat-n">03</div><div class="stat-l">We reach out to you through your email to schedule your consult.</div></div>
+      </div>
+    </div>
+
+    <div>
+      <form class="consult-form" id="consultform">
+        <input type="hidden" name="_subject" value="New consult request — Melo M Consulting">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="Full name" required autocomplete="name">
+        </div>
+
+        <div class="consult-grid">
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="Email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="Phone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="consult-grid">
+          <div class="form-row">
+            <label for="company">Business / organisation</label>
+            <input type="text" id="company" name="Business">
+          </div>
+          <div class="form-row">
+            <label for="service">Service you're interested in</label>
+            <select id="service" name="Service of interest">
+              <option value="Funding Advisory">Funding Advisory</option>
+              <option value="Compliance">Compliance</option>
+              <option value="Bookkeeping">Bookkeeping</option>
+              <option value="SME Development">SME Development</option>
+              <option value="Strategy Planning">Strategy Planning</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="reason">Reason for consulting</label>
+          <textarea id="reason" name="Reason for consulting" required placeholder="Tell us a bit about your business and what you'd like help with."></textarea>
+        </div>
+
+        <p class="form-note">By submitting, you agree that Melo M Consulting may contact you by email about your request.</p>
+
+        <button type="submit" class="btn btn-primary">Book my consult →</button>
+
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand"><span class="brand-mark">M</span><span><span class="footer-name">Melo M Consulting</span><span class="footer-tag">Empowering your business</span></span></div>
+    <div>© <span>2025</span> Melo M Consulting. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
